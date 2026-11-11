@@ -1,0 +1,20 @@
+# Secrets and local config
+.env
+config.yaml
+credentials/
+*.json
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Data may contain follower info
+data/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
