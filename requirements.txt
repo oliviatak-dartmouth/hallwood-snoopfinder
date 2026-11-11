@@ -1,13 +1,14 @@
 # Google Sheets API
-gspread==6.0.0
-google-auth==2.25.2
+gspread>=6.0.0
+google-auth>=2.25.2
 
 # Apify integration
-apify-client==1.6.4
+apify-client>=1.6.4
 
 # Configuration
-python-dotenv==1.0.0
-pyyaml==6.0.1
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
 
 # Web UI
 streamlit>=1.30.0
+pandas
