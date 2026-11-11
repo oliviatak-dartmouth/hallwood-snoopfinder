@@ -1,0 +1,30 @@
+# Copy this file to config.yaml and fill it in. config.yaml is gitignored.
+# Never commit real tokens or cookies.
+
+data_source: apify
+
+csv_export_path: data/exports
+processed_data_path: data/processed
+
+google_sheets:
+  credentials_file: credentials/google_credentials.json
+  token_file: credentials/token.json
+  spreadsheet_name: Follow Tracker
+  spreadsheet_id: ""
+
+# Instagram usernames to monitor (no @)
+ar_accounts:
+  - label_ar
+  - other_label_ar
+
+apify:
+  # Prefer setting APIFY_API_TOKEN in .env instead of here
+  api_token: ""
+  actor_id: louisdeconinck/instagram-following-scraper
+  # Export session cookies for a dedicated burner account and paste them here
+  # or on the app's Cookie Settings page. Leave empty in version control.
+  cookies: []
+
+settings:
+  retention_days: 90
+  timezone: America/New_York
