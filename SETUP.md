@@ -1,4 +1,4 @@
-# A&R Following Tracker Setup
+# Snoopfinder Setup
 
 Track who A&R accounts are following to detect new artist scouting.
 
@@ -24,7 +24,7 @@ Potential artists being scouted:
 ## 1. Install Python Dependencies
 
 ```bash
-cd instagram-follow-tracker
+cd snoopfinder
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Click "Select a project" → "New Project"
-3. Name it "Follow Tracker"
+3. Name it "Snoopfinder"
 4. Click "Create"
 
 ### Step 2: Enable the Google Sheets API
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 2. Click "Create Credentials" → "OAuth client ID"
 3. If prompted, configure the OAuth consent screen:
    - Choose "External" (unless you have Google Workspace)
-   - Fill in App name: "Follow Tracker"
+   - Fill in App name: "Snoopfinder"
    - Add your email as User support email and Developer contact
    - Click "Save and Continue" through the remaining steps
    - Under "Test users", add your Google email
@@ -258,7 +258,7 @@ The Apify integration will automatically fetch Following lists without manual ex
 ## Project Structure
 
 ```
-instagram-follow-tracker/
+snoopfinder/
 ├── config.yaml           # A&R accounts list + settings
 ├── requirements.txt      # Python dependencies
 ├── run.py               # CLI entry point

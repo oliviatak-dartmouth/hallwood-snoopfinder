@@ -11,7 +11,7 @@ git add -A
 git commit -m "Initial commit"
 
 # Create a private repo on GitHub, then:
-git remote add origin https://github.com/YOUR_USERNAME/instagram-follow-tracker.git
+git remote add origin https://github.com/YOUR_USERNAME/snoopfinder.git
 git branch -M main
 git push -u origin main
 ```

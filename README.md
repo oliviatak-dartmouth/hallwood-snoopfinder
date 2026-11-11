@@ -1,6 +1,6 @@
-# Instagram Follow Tracker
+# Snoopfinder
 
-A Python tool that monitors which accounts a list of Instagram profiles start following, flags new follows, and surfaces accounts that several tracked profiles follow at once. I built it during a summer internship in the music industry as a competitive-intelligence tool: it tracks which up-and-coming artists rival talent scouts (A&Rs) start following.
+**Competitive intelligence for music A&R.** Snoopfinder watches which Instagram accounts rival label scouts (A&Rs) start following, flags every new follow, and surfaces the artists that several scouts are circling at once. I built it during a summer internship in the music industry to see which up-and-coming artists competing labels were interested in.
 
 **Stack:** Python, Streamlit, Apify (Instagram scraping), Google Sheets API (gspread), pandas, PyYAML
 
@@ -30,8 +30,8 @@ config.example.yaml    Template config (copy to config.yaml)
 ## Setup
 
 ```bash
-git clone https://github.com/<your-username>/instagram-follow-tracker.git
-cd instagram-follow-tracker
+git clone https://github.com/<your-username>/snoopfinder.git
+cd snoopfinder
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 

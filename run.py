@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Instagram A&R Following Tracker
+Snoopfinder: competitive intelligence for music A&R
 
 Usage:
     python3 run.py add <username>        # Add new A&R, fetch following, establish baseline

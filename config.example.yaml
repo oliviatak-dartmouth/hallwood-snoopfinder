@@ -9,7 +9,7 @@ processed_data_path: data/processed
 google_sheets:
   credentials_file: credentials/google_credentials.json
   token_file: credentials/token.json
-  spreadsheet_name: Follow Tracker
+  spreadsheet_name: Snoopfinder
   spreadsheet_id: ""
 
 # Instagram usernames to monitor (no @)

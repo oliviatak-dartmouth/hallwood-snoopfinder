@@ -1,5 +1,5 @@
 """
-Instagram Follow Tracker: public demo.
+Snoopfinder: public demo.
 
 This demo uses entirely made-up sample data. It has no connection to Instagram,
 Apify or Google Sheets, needs no secrets, and cannot run real scans. The real
@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="Follow Tracker Demo", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Snoopfinder Demo", page_icon="🔍", layout="wide")
 
 # ----------------------------------------------------------------------------
 # Synthetic data (seeded so the demo looks the same on every load)
@@ -85,15 +85,15 @@ follows, hot, scan_history = make_data()
 # Layout
 # ----------------------------------------------------------------------------
 with st.sidebar:
-    st.title("Follow Tracker")
-    st.caption("Public demo with sample data")
+    st.title("🔍 Snoopfinder")
+    st.caption("Competitive intelligence for music A&R. Public demo with sample data.")
     page = st.radio(
         "Page",
         ["New Follows", "Hot Artists", "Tracked Accounts", "Scan History", "About"],
         label_visibility="collapsed",
     )
     st.divider()
-    st.caption("Source code: github.com/oliviatak-dartmouth/instagram-follow-tracker")
+    st.caption("Source code: github.com/oliviatak-dartmouth/snoopfinder")
 
 st.info(
     "This is a demo. All accounts and numbers below are made up. "
@@ -152,7 +152,9 @@ else:
         """
 **What it does**
 
-- Takes a list of Instagram accounts to monitor.
+Snoopfinder is a competitive-intelligence tool for music A&R. It shows which artists rival label scouts are starting to follow, so a team can spot talent early.
+
+- Takes a list of scout Instagram accounts to monitor.
 - Scrapes each account's following list on a schedule using an Apify actor.
 - Compares each new snapshot with the last one to detect new follows.
 - Cross-references accounts to find artists that several tracked profiles follow.

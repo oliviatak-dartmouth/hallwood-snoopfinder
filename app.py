@@ -1,5 +1,5 @@
 """
-Instagram A&R Following Tracker — Web UI
+Snoopfinder: Web UI
 Run with:  streamlit run app.py
 """
 
